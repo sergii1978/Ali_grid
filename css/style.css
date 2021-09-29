@@ -1,8 +1,7 @@
-@import url("../css/fonts.css");
+/* @import url("../css/fonts.css"); */
 @import url("../css/svg.css");
 
 body{
-  max-width: 1365px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font‑display: swap;
   overflow-wrap: break-word;
@@ -27,6 +26,46 @@ ul,li{
   padding: 0;
 }
 
+h1,h2,h3,h4 {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 45px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.467;
+  letter-spacing: 1.35px;
+}
+
+h2:not(.beige) {
+  color: rgb(255, 255, 255);
+}
+
+h2 span {
+  font-weight: 700;
+}
+
+h3 {
+    font-size: 42px;
+    font-family: "Roboto";
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    line-height: 1.571; 
+    letter-spacing: 1.26px; 
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 15.57px;
+    font-family: "Myriad Pro";
+    line-height: 1.798;
+    letter-spacing: 0.46px;  
+}
+
+.grid-item-blue, .grid-item-black, .grid-item-human, .grid-item-green {
+  color: #ffffff;
+} 
 
 
 
@@ -52,24 +91,64 @@ h1 span:nth-child(2) {
   font-weight: 400;
 }
 
-/* header */
-header .grid-item:first-child {
-  background-image: url('../img/photo6.png');
-  background-size: cover;
+a, input, textarea {
+    font-size: 16.57px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.931;
+    letter-spacing: 0.49px;  
 }
 
-header .grid-item:last-child {
+a:not(.social_icon_link) {
+  display: block;
+  max-width: 150px;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+/* header */
+.grid-item-bg {
+  background-image: url('../img/photo6.png');
+}
+
+.grid-item-grey {
   background-color: #f3f3f3;
 }
 
-/* footer */
-/*footer section form*/
-.footer_form {
-  padding-left: 57px;
-  background-image: url('../img/photo1.png');
+.grid-item {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+/* main */
+/* section scketch */
+.grid-item-blue {
+  background-image: url('../img/photo3.png');
+}
+
+/* section history */
+.grid-item-beige {
+  background-image: url('../img/photo4.png');
+}
+
+/* section dummy */
+.grid-item-black {
+  background-image: url('../img/photo5.png');
+}
+
+
+/* footer */
+/*footer section form*/
+.grid-item-green {
+  background-image: url('../img/photo1.png');
+}
+
+
 /*footer section logo */
+.grid-item-human {
+  background-image: url('../img/photo2.png');
+}
