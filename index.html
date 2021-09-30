@@ -23,17 +23,21 @@
         <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" data-mce-href="img/favicon/favicon-96x96.png">
         <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" data-mce-href="img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" data-mce-href="img/favicon/favicon-16x16.png">
-
+        
         <!--Fonts preload-->
 		<link rel="preload" href="fonts/roboto-regular.woff" as="font">
 
+        <!-- Fonts -->
+        <link rel="stylesheet" href="css/fonts.css">
+
         <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
 
         <!--Styles-->
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/svg.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
@@ -43,14 +47,13 @@
             <header>
                 <section class="portfolio">
                     <h2 class="visually-hidden">Portfolio photo</h2>
-                    <div class="grid-item grid-item-bg">
-                        <img src=" " alt="photo6">
+                    <div class="grid-item-bg"> 
+                        <img src="img/photo6.png" alt="photo6">  
                     </div>
                 </section>
                 <section class="project">
                     <div class="grid-item grid-item-grey">
-                        <!-- <button></button> -->
-                        <img src="img/svg/menu.svg" alt="" width="38" height="38">
+                        <button class="menu-btn"></button>
                         <h1>Ali Sayed’s  <span>Web Designing </span><span>Project</span></h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
@@ -81,7 +84,7 @@
                     <div class="grid-item grid-item-beige">
                         <h2 class="beige">Best <span>Starting</span></h2>
                         <p>Lorem ipsum dolor sit amet, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex  consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
-                        <a href="#">View Our History</a>
+                        <a href="#" class="history-btn">View Our History</a>
                     </div>
                 </section>
 
@@ -102,7 +105,7 @@
                     <div class="grid-item grid-item-human">
                         <h2>This Webpage Is Designed By</h2>
                         <div>
-                            <img src="img/logo.png" alt="logo" width="90" height="90">
+                            <img class="logo" src="img/logo.png" alt="logo" width="90" height="90">
                             <h3>Ali Sayed</h3>
                             <p>Graphic Designer</p>
                         </div>
@@ -113,7 +116,7 @@
                 <section class="footer_form">
                     <div class="grid-item grid-item-green">
                         <h2>Say <span>‘Hello’</span></h2>
-                        <form action="">
+                        <form class="form" action="">
                             <input type="text" placeholder="Your Name">
                             <input type="text" placeholder="Your Email">
                             <textarea name="" id=""  placeholder="Your Message Here ..."></textarea>
@@ -153,21 +156,5 @@
 
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/svgicons-config.js"></script>
-		<script src="js/svgicons.js"></script>
-        <script>
-			(function() {
-				// initialize all
-				
-				[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
-					var svgicon = new svgIcon( el, svgIconConfig );
-				} );
-
-				new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger' ), svgIconConfig, { easing : mina.backin } );
-				new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
-
-				new svgIcon( document.querySelector( '.si-icons-hover .si-icon-hamburger' ), svgIconConfig, { easing : mina.backin, evtoggle : 'mouseover', size : { w : 128, h : 128 } } );
-			})();
-		</script>
     </body>
 </html>

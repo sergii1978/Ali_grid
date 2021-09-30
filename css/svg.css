@@ -1,5 +1,6 @@
 .social_icons_list {
   display: flex;
+  justify-content: start;
 }
 
 .social_icon {
