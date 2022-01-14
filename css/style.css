@@ -4,8 +4,12 @@ body{
   overflow-wrap: break-word;
 }
 
-* {
+html {
   box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
 }
 
 .visually-hidden {
@@ -130,7 +134,7 @@ header {
   grid-row-end: 2;
 }
 .grid-item-bg img {
-  /* background-image: url('../img/photo6.png'); */
+   background-image: url('../img/photo6.png');
   /* grid-area: a; */
   max-width: 100%;
 }
