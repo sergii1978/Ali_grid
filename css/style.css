@@ -39,11 +39,11 @@ h1 {
   letter-spacing: 1.2px;
 }
 
-h1 span:nth-child(2) {
+h1 span:nth-child(1) {
 font-weight: 700;
 }
 
-h1 span:nth-child(3) {
+h1 span:nth-child(2) {
   font-weight: 400;
 }
 
@@ -173,6 +173,10 @@ a:not(.social_icon_link, .logo-link) {
   cursor: pointer;
 }
 
+.span {
+  display: block;
+}
+
 
 /* main */
 /* section sketch */
@@ -248,7 +252,6 @@ a:not(.social_icon_link, .logo-link) {
 
 .grid-item-black p {
   max-width: 576px;
-  /*! margin-top: -17px; */
   margin-bottom: 38px;
 }
 
@@ -278,6 +281,9 @@ a:not(.social_icon_link, .logo-link) {
 .grid-item-green {
   background-image: url('../img/photo1.png');
   padding-bottom: 68px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .form {
@@ -346,10 +352,13 @@ a:not(.social_icon_link, .logo-link) {
 
 .grid-item-human {
   background-image: url('../img/photo2.png');
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .logo-wrap {
-  margin-top: 248px;
+  margin-bottom: 70px;
 }
 
 .logo-link {
